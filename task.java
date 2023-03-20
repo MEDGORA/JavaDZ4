@@ -16,6 +16,7 @@ import java.util.Scanner;
 public class task {
 
     public static void main(String[] args) {
+        try {
         ArrayList <String> list1 = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         while (true){
@@ -43,11 +44,12 @@ public class task {
                 }
                 list1.add(i,split[0]);
                 list1.remove(i+1);
-                System.out.println(list1);
             }
             if (s == "exit") {
                 break;
             }
         }
+    } catch (Exception e){
     }
+}
 }
